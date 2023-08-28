@@ -1,0 +1,10 @@
+.container {
+    font-size: 1.6rem;
+    margin: 10rem;
+    border: 1px solid #776655;
+}
+
+.content {
+    display: flex;
+    min-height: 28rem;
+}

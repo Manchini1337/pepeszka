@@ -1,0 +1,10 @@
+.container {
+    flex: 1;
+    background-color: #c4ae94;
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+.post {
+    margin-bottom: 1rem;
+}

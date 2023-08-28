@@ -1,0 +1,15 @@
+.button {
+    background: #71685E url(src/assets/newbtn_middle.png) repeat-x left top;
+    border-radius: 1rem;
+    box-shadow: 0 3px 8px #000000;
+    font-family: Arial, sans-serif;
+    font-size: 1.4rem;
+    color: rgb(255,255,255);
+    padding: 4px 15px;
+    border: 0 none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #978D74 url(src/assets/newbtn_middle.png) repeat-x left top;
+}
