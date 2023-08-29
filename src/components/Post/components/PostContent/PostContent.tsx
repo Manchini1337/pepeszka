@@ -1,8 +1,9 @@
 import { FC } from 'react';
 import classes from './PostContent.module.css';
+import { IPost } from 'utils';
 
 export interface IPostContent {
-  postData: string;
+  postData: IPost[];
 }
 
 export const PostContent: FC<IPostContent> = ({ postData }) => (
@@ -12,6 +13,10 @@ export const PostContent: FC<IPostContent> = ({ postData }) => (
       className={classes.icon}
       alt='brawo borys'
     />
-    <div className={classes.post}>{postData.length ? postData : 'xD'}</div>
+    {postData?.map(({ content, id }) => (
+      <div key={id} className={classes.post}>
+        {content}
+      </div>
+    ))}
   </div>
 );
